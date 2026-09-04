@@ -1,0 +1,1 @@
+select unique_id , name from employees left join employeeUNI on employeeUNI.id = employees.id where unique_id is null or unique_id >= 0;
