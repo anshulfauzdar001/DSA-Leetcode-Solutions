@@ -1,0 +1,1 @@
+select today.id from weather today left join weather yesterday on datediff(today.recordDate,yesterday.recordDate)=1 where today.temperature>yesterday.temperature;
